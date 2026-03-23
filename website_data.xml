@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cbitWebsite>
+    <homeSection>
+        <title>CBIT Online Academy</title>
+        <subtitle>One stop platform for learning and growth.</subtitle>
+        <bannerImage>learning.webp</bannerImage>
+    </homeSection>
+
+    <coursesSection>
+        <course id="c1">
+            <title>Full Stack Development</title>
+            <instructor>Dr. Ramesh</instructor>
+            <price currency="INR">4999</price>
+            <rating>4.5</rating>
+            <duration>12 Weeks</duration>
+        </course>
+        <course id="c2">
+            <title>Python for Data Science</title>
+            <instructor>Prof. S. Rao</instructor>
+            <price currency="INR">3499</price>
+            <rating>5.0</rating>
+            <duration>8 Weeks</duration>
+        </course>
+    </coursesSection>
+
+    <contactSection>
+        <address>Gandipet, Hyderabad, Telangana 500075</address>
+        <email>principal@cbit.ac.in</email>
+        <phone>+91 040-24193276</phone>
+    </contactSection>
+</cbitWebsite>

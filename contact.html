@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - CBIT</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            padding: 50px 10%;
+        }
+        .info-box h3 { color: var(--primary); border-bottom: 2px solid var(--accent); display: inline-block; }
+        .info-details { margin-top: 20px; line-height: 2; }
+        
+        .contact-form { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        .contact-form textarea { height: 120px; resize: vertical; }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>CBITLearn</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <div class="info-box">
+            <h2>Get In Touch</h2>
+            <p>Have questions about our courses or admissions? Reach out to us below.</p>
+            
+            <div class="info-details">
+                <p><strong>📍 Address:</strong><br> Gandipet, Hyderabad, Telangana 500075</p>
+                <p><strong>📧 Email:</strong><br> principal@cbit.ac.in</p>
+                <p><strong>📞 Phone:</strong><br> +91 040-24193276</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3>Send an Inquiry</h3>
+            <form action="#" onsubmit="alert('Thank you! Your message has been sent.')">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="How can we help you?"></textarea>
+                <button type="submit" class="btn" style="background: var(--primary); color: white;">Send Message</button>
+            </button>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 20px; background: #ddd; margin-top: 50px;">
+        <p>&copy; 2026 Chaitanya Bharathi Institute of Technology</p>
+    </footer>
+</body>
+</html>

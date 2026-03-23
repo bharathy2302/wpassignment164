@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - CBIT</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-box { max-width: 400px; margin: 50px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>CBITLearn</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-box">
+        <h2>Create Account</h2>
+        <form id="regForm" onsubmit="return validate()">
+            <input type="text" id="user" placeholder="Full Name" required> <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="pass" placeholder="Password" required>
+            <input type="password" id="cpass" placeholder="Confirm Password" required>
+            <button type="submit" class="btn" style="background: var(--success); color: white;">Register</button>
+        </form>
+    </div>
+
+    <script>
+        function validate() {
+            let p1 = document.getElementById('pass').value;
+            let p2 = document.getElementById('cpass').value;
+            if (p1 !== p2) {
+                alert("Passwords do not match!"); /* [cite: 19] */
+                return false;
+            }
+            alert("Registration Successful!");
+            return true;
+        }
+    </script>
+</body>
+</html>
